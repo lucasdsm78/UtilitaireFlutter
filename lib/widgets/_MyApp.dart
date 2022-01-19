@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Utilitaire Flutter',
+      debugShowCheckedModeBanner: false,
       routes: {
         HomePage.tag: (context) => HomePage(),
         DistanceConverterPage.tag: (context) => DistanceConverterPage(),

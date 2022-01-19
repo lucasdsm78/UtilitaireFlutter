@@ -95,7 +95,7 @@ class _MyUserYear extends State<UserYear> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("age utilisateur"),
+        title: const Text("Calcul âge utilisateur"),
       ),
       body: Center(
         child: Column(
@@ -107,7 +107,7 @@ class _MyUserYear extends State<UserYear> {
             const SizedBox(height: 100),
             ElevatedButton(
               onPressed: (()=>_selectDate(context)),
-              child: const Text('choisir'),
+              child: const Text('Choisir'),
             ),
           ],
         ),
@@ -133,7 +133,7 @@ class _MyUserYear extends State<UserYear> {
                 height: 30,
               ),
               ElevatedButton(
-                child: const Text("O K"),
+                child: const Text("Fermer"),
                 onPressed: (){
                   Navigator.pop(buildContext);
                 },
