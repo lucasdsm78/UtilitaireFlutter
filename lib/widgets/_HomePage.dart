@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:utilitaire_flutter/models/MenuItem.dart';
 import 'package:utilitaire_flutter/widgets/_DistanceConverterPage.dart';
+import 'package:utilitaire_flutter/widgets/_FileSizePage.dart';
 import 'package:utilitaire_flutter/widgets/userYears.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,11 +25,12 @@ class _HomePageState extends State<HomePage> {
             // TODO: Mettre à jour les routes
             MenuItem('Accueil', Icons.home , Colors.blueGrey, HomePage.tag),
             MenuItem('Distance', Icons.straighten , Colors.yellow, DistanceConverterPage.tag),
+            //MenuItem('Promotions', Icons.discount , Colors.orange, MyCustomForm.tag),
             MenuItem('Anniversaire', Icons.cake , Colors.pink, UserYear.tag),
-            MenuItem('Informatique', Icons.folder , Colors.teal, DistanceConverterPage.tag),
-            MenuItem('Température', Icons.thermostat , Colors.purple, DistanceConverterPage.tag),
-            MenuItem('Chiffres romains', Icons.numbers , Colors.green, DistanceConverterPage.tag),
-            MenuItem('Calendrier', Icons.date_range , Colors.red, DistanceConverterPage.tag),
+            MenuItem('Informatique', Icons.folder , Colors.teal, FileSizePage.tag),
+            MenuItem('Température', Icons.thermostat , Colors.purple, HomePage.tag),
+            MenuItem('Chiffres romains', Icons.numbers , Colors.green, HomePage.tag),
+            MenuItem('Temps', Icons.timer , Colors.red, HomePage.tag),
           ],
         ),
       ),

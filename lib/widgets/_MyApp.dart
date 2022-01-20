@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:utilitaire_flutter/widgets/_FileSizePage.dart';
 import 'package:utilitaire_flutter/widgets/_HomePage.dart';
 import 'package:utilitaire_flutter/widgets/_DistanceConverterPage.dart';
 import 'package:utilitaire_flutter/widgets/userYears.dart';
@@ -14,6 +15,8 @@ class MyApp extends StatelessWidget {
         HomePage.tag: (context) => HomePage(),
         DistanceConverterPage.tag: (context) => DistanceConverterPage(),
         UserYear.tag: (context) => UserYear(),
+        FileSizePage.tag: (context) => FileSizePage(),
+        //MyCustomForm.tag: (context) => MyCustomForm(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
