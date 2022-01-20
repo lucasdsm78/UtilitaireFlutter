@@ -4,6 +4,8 @@ import 'package:utilitaire_flutter/models/MenuItem.dart';
 import 'package:utilitaire_flutter/widgets/_DistanceConverterPage.dart';
 import 'package:utilitaire_flutter/widgets/_FileSizePage.dart';
 import 'package:utilitaire_flutter/widgets/userYears.dart';
+import 'package:utilitaire_flutter/widgets/calculatePromotion.dart';
+import 'package:utilitaire_flutter/widgets/dateDifference.dart';
 
 class HomePage extends StatefulWidget {
   static const tag = 'home_page';
@@ -23,14 +25,13 @@ class _HomePageState extends State<HomePage> {
           children: [
             // Affichage des différents utilitaires présent sur l'app
             // TODO: Mettre à jour les routes
-            MenuItem('Accueil', Icons.home , Colors.blueGrey, HomePage.tag),
             MenuItem('Distance', Icons.straighten , Colors.yellow, DistanceConverterPage.tag),
-            //MenuItem('Promotions', Icons.discount , Colors.orange, MyCustomForm.tag),
+            MenuItem('Promotions', Icons.discount , Colors.orange, CalculatePromotion.tag),
             MenuItem('Anniversaire', Icons.cake , Colors.pink, UserYear.tag),
+            MenuItem('Temps', Icons.timer , Colors.red, MyDateDifference.tag),
             MenuItem('Informatique', Icons.folder , Colors.teal, FileSizePage.tag),
             MenuItem('Température', Icons.thermostat , Colors.purple, HomePage.tag),
             MenuItem('Chiffres romains', Icons.numbers , Colors.green, HomePage.tag),
-            MenuItem('Temps', Icons.timer , Colors.red, HomePage.tag),
           ],
         ),
       ),

@@ -1,26 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-class DateDifference extends StatelessWidget {
-  const DateDifference({Key? key}) : super(key: key);
-
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-
-      theme: ThemeData(
-
-        primarySwatch: Colors.red,
-      ),
-      home: MyDateDifference(),
-    );
-  }
-}
-
 class MyDateDifference extends StatefulWidget {
+  static const tag = 'timer_page';
 
   @override
   State<MyDateDifference> createState() => _MyDateDifference();
@@ -79,7 +61,7 @@ class _MyDateDifference extends State<MyDateDifference> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("age utilisateur"),
+        title: const Text("Calcul temps"),
       ),
       body: Center(
         child: Column(
@@ -158,7 +140,7 @@ class _MyDateDifference extends State<MyDateDifference> {
             title: const Text("BONJOUR"),
             contentPadding: const EdgeInsets.all(20.0),
             children: [
-            Text("Dans $yearDiff années,  $monthDiff mois et $dayDiff jours"),
+            Text("Il va s'écouler $yearDiff années,  $monthDiff mois et $dayDiff jours entre les dates sélectionnées."),
               Container(
                 height: 30,
               ),
