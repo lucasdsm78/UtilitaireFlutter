@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import './widgets/dateDifference.dart';
+import 'package:utilitaire_flutter/widgets/_MyApp.dart';
 
 void main() {
-  runApp(const DateDifference());
+  runApp(MyApp());
 }
-

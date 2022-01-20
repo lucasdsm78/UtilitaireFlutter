@@ -1,25 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-
-      theme: ThemeData(
-
-        primarySwatch: Colors.red,
-      ),
-      home: UserYear(),
-    );
-  }
-}
-
 class UserYear extends StatefulWidget {
+  static const tag = 'birthday_page';
 
   @override
   State<UserYear> createState() => _MyUserYear();
@@ -113,7 +95,7 @@ class _MyUserYear extends State<UserYear> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("age utilisateur"),
+        title: const Text("Calcul âge utilisateur"),
       ),
       body: Center(
         child: Column(
@@ -125,7 +107,7 @@ class _MyUserYear extends State<UserYear> {
             const SizedBox(height: 100),
             ElevatedButton(
               onPressed: (()=>_selectDate(context)),
-              child: const Text('choisir'),
+              child: const Text('Choisir'),
             ),
           ],
         ),
@@ -151,7 +133,7 @@ class _MyUserYear extends State<UserYear> {
                 height: 30,
               ),
               ElevatedButton(
-                child: const Text("O K"),
+                child: const Text("Fermer"),
                 onPressed: (){
                   Navigator.pop(buildContext);
                 },
