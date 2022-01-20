@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'models/ConvertTemperature.dart';
+import '../models/ConvertTemperature.dart';
 
-class ConvertTemperature extends StatelessWidget {
-  const ConvertTemperature({Key? key}) : super(key: key);
+class ConverterTemperature extends StatelessWidget {
+  const ConverterTemperature({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
