@@ -5,6 +5,7 @@ import 'package:utilitaire_flutter/widgets/_DistanceConverterPage.dart';
 import 'package:utilitaire_flutter/widgets/userYears.dart';
 import 'package:utilitaire_flutter/widgets/calculatePromotion.dart';
 import 'package:utilitaire_flutter/widgets/dateDifference.dart';
+import 'package:utilitaire_flutter/widgets/_AreaConverterPage.dart';
 
 class MyApp extends StatelessWidget {
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         FileSizePage.tag: (context) => FileSizePage(),
         CalculatePromotion.tag: (context) => CalculatePromotion(),
         MyDateDifference.tag: (context) => MyDateDifference(),
+        AreaConverterPage.tag: (context) => AreaConverterPage(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
