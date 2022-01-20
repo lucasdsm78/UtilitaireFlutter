@@ -13,21 +13,21 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text(appTitle),
         ),
-        body: const MyCustomForm(),
+        body: const CalculatePromotion(),
       ),
     );
   }
 }
 
-class MyCustomForm extends StatefulWidget {
-  const MyCustomForm({Key? key}) : super(key: key);
+class CalculatePromotion extends StatefulWidget {
+  const CalculatePromotion({Key? key}) : super(key: key);
 
   @override
-  _MyCustomFormState createState() => _MyCustomFormState();
+  _CalculatePromotionState createState() => _CalculatePromotionState();
 }
 
 
-class _MyCustomFormState extends State<MyCustomForm> {
+class _CalculatePromotionState extends State<CalculatePromotion> {
 
   TextEditingController inputPrice = TextEditingController();
   TextEditingController inputReduction = TextEditingController();
