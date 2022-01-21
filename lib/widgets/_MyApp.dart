@@ -6,6 +6,8 @@ import 'package:utilitaire_flutter/widgets/userYears.dart';
 import 'package:utilitaire_flutter/widgets/calculatePromotion.dart';
 import 'package:utilitaire_flutter/widgets/dateDifference.dart';
 import 'package:utilitaire_flutter/widgets/_AreaConverterPage.dart';
+import 'package:utilitaire_flutter/widgets/convertTemperature.dart';
+import 'package:utilitaire_flutter/widgets/_RomanNumerals.dart';
 
 class MyApp extends StatelessWidget {
 
@@ -22,6 +24,8 @@ class MyApp extends StatelessWidget {
         CalculatePromotion.tag: (context) => CalculatePromotion(),
         MyDateDifference.tag: (context) => MyDateDifference(),
         AreaConverterPage.tag: (context) => AreaConverterPage(),
+        ConvertTemperatureForm.tag: (context) => ConvertTemperatureForm(),
+        RomanNumeralsPage.tag: (context) => RomanNumeralsPage(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,

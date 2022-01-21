@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class FileSizePage extends StatefulWidget {
-  static const tag = 'file_size_page';
+  static const tag = 'fichiers_informatiques';
 
   @override
   _FileSizePageState createState() => _FileSizePageState();

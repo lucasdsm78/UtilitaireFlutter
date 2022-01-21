@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class DistanceConverterPage extends StatefulWidget {
-  static const tag = 'distance_page';
+  static const tag = 'distance';
 
   @override
   _DistanceConverterPageState createState() => _DistanceConverterPageState();

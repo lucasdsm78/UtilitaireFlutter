@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CalculatePromotion extends StatefulWidget {
-  static const tag = 'promo_page';
+  static const tag = 'promotions';
 
   @override
   _CalculatePromotionState createState() => _CalculatePromotionState();
@@ -21,7 +21,7 @@ class _CalculatePromotionState extends State<CalculatePromotion> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Calcul promotion"),
+        title: const Text("Calcul promotions"),
       ),
       body:
       Center(
@@ -35,7 +35,7 @@ class _CalculatePromotionState extends State<CalculatePromotion> {
               controller: inputPrice,
               decoration: const InputDecoration(
                 border: UnderlineInputBorder(),
-                labelText: 'Original price',
+                labelText: 'Prix initial',
               ),
             ),
           ),
@@ -46,7 +46,7 @@ class _CalculatePromotionState extends State<CalculatePromotion> {
               controller: inputReduction,
               decoration: const InputDecoration(
                 border: UnderlineInputBorder(),
-                labelText: 'Reduction',
+                labelText: 'Taux de réduction',
               ),
             ),
           ),
@@ -84,7 +84,7 @@ class _CalculatePromotionState extends State<CalculatePromotion> {
                       );
                     });
               },
-              child: const Text('Calculate'),
+              child: const Text('Calculer'),
             ),
           ),
         ],
