@@ -8,6 +8,7 @@ import 'package:utilitaire_flutter/widgets/dateDifference.dart';
 import 'package:utilitaire_flutter/widgets/_AreaConverterPage.dart';
 import 'package:utilitaire_flutter/widgets/convertTemperature.dart';
 import 'package:utilitaire_flutter/widgets/_RomanNumerals.dart';
+import 'package:utilitaire_flutter/widgets/NumericValueConvert.dart';
 
 class MyApp extends StatelessWidget {
 
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         DistanceConverterPage.tag: (context) => DistanceConverterPage(),
         UserYear.tag: (context) => UserYear(),
         FileSizePage.tag: (context) => FileSizePage(),
+        NumericValueForm.tag: (context) => NumericValueForm(),
         CalculatePromotion.tag: (context) => CalculatePromotion(),
         MyDateDifference.tag: (context) => MyDateDifference(),
         AreaConverterPage.tag: (context) => AreaConverterPage(),

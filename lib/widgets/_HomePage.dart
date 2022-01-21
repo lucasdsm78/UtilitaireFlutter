@@ -9,6 +9,7 @@ import 'package:utilitaire_flutter/widgets/dateDifference.dart';
 import 'package:utilitaire_flutter/widgets/_AreaConverterPage.dart';
 import 'package:utilitaire_flutter/widgets/convertTemperature.dart';
 import 'package:utilitaire_flutter/widgets/_RomanNumerals.dart';
+import 'package:utilitaire_flutter/widgets/NumericValueConvert.dart';
 
 class HomePage extends StatefulWidget {
   static const tag = 'accueil';
@@ -37,6 +38,7 @@ class _HomePageState extends State<HomePage> {
             MenuItem('Température', Icons.thermostat , Colors.purple, ConvertTemperatureForm.tag),
             MenuItem('Chiffres romains', Icons.numbers , Colors.green, RomanNumeralsPage.tag),
             MenuItem('Aire', Icons.widgets , Colors.lime, AreaConverterPage.tag),
+            MenuItem('Valeurs numériques', Icons.computer , Colors.blue, NumericValueForm.tag),
           ],
         ) : ListView(
           children: [
@@ -50,6 +52,7 @@ class _HomePageState extends State<HomePage> {
             MenuItem('Température', Icons.thermostat , Colors.purple, ConvertTemperatureForm.tag),
             MenuItem('Chiffres romains', Icons.numbers , Colors.green, RomanNumeralsPage.tag),
             MenuItem('Aire', Icons.widgets , Colors.lime, AreaConverterPage.tag),
+            MenuItem('Valeurs numériques', Icons.computer , Colors.blue, NumericValueForm.tag),
           ],
         ),
       ),
