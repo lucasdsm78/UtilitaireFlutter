@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class UserYear extends StatefulWidget {
-  static const tag = 'birthday_page';
+  static const tag = 'anniversaire';
 
   @override
   State<UserYear> createState() => _MyUserYear();

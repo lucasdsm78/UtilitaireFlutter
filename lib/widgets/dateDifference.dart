@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class MyDateDifference extends StatefulWidget {
-  static const tag = 'timer_page';
+  static const tag = 'date_difference';
 
   @override
   State<MyDateDifference> createState() => _MyDateDifference();
@@ -68,7 +68,7 @@ class _MyDateDifference extends State<MyDateDifference> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Récupérer les 2 dates',
+              'Renseigner les 2 dates',
             ),
             const SizedBox(height: 100),
             Row(

@@ -8,6 +8,7 @@ import 'package:utilitaire_flutter/widgets/dateDifference.dart';
 import 'package:utilitaire_flutter/widgets/_AreaConverterPage.dart';
 import 'package:utilitaire_flutter/widgets/NumericValueConvert.dart';
 import 'package:utilitaire_flutter/widgets/convertTemperature.dart';
+import 'package:utilitaire_flutter/widgets/_RomanNumerals.dart';
 
 class MyApp extends StatelessWidget {
 
@@ -146,6 +147,16 @@ class MyApp extends StatelessWidget {
       case ConvertTemperatureForm.tag:
         return PageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) => ConvertTemperatureForm(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+        );
+      case RomanNumeralsPage.tag:
+        return PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => RomanNumeralsPage(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             return FadeTransition(
               opacity: animation,

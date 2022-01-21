@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class AreaConverterPage extends StatefulWidget {
-  static const tag = 'area_page';
+  static const tag = 'aire';
 
   @override
   _AreaConverterPageState createState() => _AreaConverterPageState();
