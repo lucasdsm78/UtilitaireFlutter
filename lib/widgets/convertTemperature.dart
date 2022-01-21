@@ -1,26 +1,9 @@
 import 'package:flutter/material.dart';
 import '../models/ConvertTemperature.dart';
 
-class ConverterTemperature extends StatelessWidget {
-  const ConverterTemperature({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    const appTitle = 'Convert temperature';
-    return MaterialApp(
-      title: appTitle,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(appTitle),
-        ),
-        body: const ConvertTemperatureForm(),
-      ),
-    );
-  }
-}
 
 class ConvertTemperatureForm extends StatefulWidget {
+  static const tag = "temperature";
   const ConvertTemperatureForm({Key? key}) : super(key: key);
 
   @override

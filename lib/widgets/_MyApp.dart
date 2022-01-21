@@ -6,6 +6,8 @@ import 'package:utilitaire_flutter/widgets/userYears.dart';
 import 'package:utilitaire_flutter/widgets/calculatePromotion.dart';
 import 'package:utilitaire_flutter/widgets/dateDifference.dart';
 import 'package:utilitaire_flutter/widgets/_AreaConverterPage.dart';
+import 'package:utilitaire_flutter/widgets/NumericValueConvert.dart';
+import 'package:utilitaire_flutter/widgets/convertTemperature.dart';
 
 class MyApp extends StatelessWidget {
 
@@ -15,15 +17,6 @@ class MyApp extends StatelessWidget {
       title: 'Utilitaire Flutter',
       debugShowCheckedModeBanner: false,
       onGenerateRoute: generateRoute,
-      routes: {
-        HomePage.tag: (context) => HomePage(),
-        DistanceConverterPage.tag: (context) => DistanceConverterPage(),
-        UserYear.tag: (context) => UserYear(),
-        FileSizePage.tag: (context) => FileSizePage(),
-        CalculatePromotion.tag: (context) => CalculatePromotion(),
-        MyDateDifference.tag: (context) => MyDateDifference(),
-        AreaConverterPage.tag: (context) => AreaConverterPage(),
-      },
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
@@ -36,6 +29,54 @@ class MyApp extends StatelessWidget {
       case HomePage.tag:
         return PageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) => HomePage(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            const begin = Offset(0.0, 1.0);
+            const end = Offset.zero;
+            const curve = Curves.ease;
+
+            var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+
+            return SlideTransition(
+              position: animation.drive(tween),
+              child: child,
+            );
+          },
+        );
+      case CalculatePromotion.tag:
+        return PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => CalculatePromotion(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            const begin = Offset(0.0, 1.0);
+            const end = Offset.zero;
+            const curve = Curves.ease;
+
+            var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+
+            return SlideTransition(
+              position: animation.drive(tween),
+              child: child,
+            );
+          },
+        );
+      case MyDateDifference.tag:
+        return PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => MyDateDifference(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            const begin = Offset(0.0, 1.0);
+            const end = Offset.zero;
+            const curve = Curves.ease;
+
+            var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+
+            return SlideTransition(
+              position: animation.drive(tween),
+              child: child,
+            );
+          },
+        );
+      case AreaConverterPage.tag:
+        return PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => AreaConverterPage(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             const begin = Offset(0.0, 1.0);
             const end = Offset.zero;
@@ -85,6 +126,26 @@ class MyApp extends StatelessWidget {
       case FileSizePage.tag:
         return PageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) => FileSizePage(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+        );
+      case NumericValueForm.tag:
+        return PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => NumericValueForm(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+        );
+      case ConvertTemperatureForm.tag:
+        return PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => ConvertTemperatureForm(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             return FadeTransition(
               opacity: animation,

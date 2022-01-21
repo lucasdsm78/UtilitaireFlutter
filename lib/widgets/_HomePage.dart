@@ -6,6 +6,7 @@ import 'package:utilitaire_flutter/widgets/_FileSizePage.dart';
 import 'package:utilitaire_flutter/widgets/userYears.dart';
 import 'package:utilitaire_flutter/widgets/calculatePromotion.dart';
 import 'package:utilitaire_flutter/widgets/dateDifference.dart';
+import 'package:utilitaire_flutter/widgets/convertTemperature.dart';
 import 'package:utilitaire_flutter/widgets/_AreaConverterPage.dart';
 
 class HomePage extends StatefulWidget {
@@ -45,7 +46,7 @@ class _HomePageState extends State<HomePage> {
             MenuItem('Anniversaire', Icons.cake , Colors.pink, UserYear.tag),
             MenuItem('Temps', Icons.timer , Colors.red, MyDateDifference.tag),
             MenuItem('Informatique', Icons.folder , Colors.teal, FileSizePage.tag),
-            MenuItem('Température', Icons.thermostat , Colors.purple, HomePage.tag),
+            MenuItem('Température', Icons.thermostat , Colors.purple, ConvertTemperatureForm.tag),
             MenuItem('Chiffres romains', Icons.numbers , Colors.green, HomePage.tag),
             MenuItem('Aire', Icons.widgets , Colors.lime, AreaConverterPage.tag),
           ],

@@ -1,28 +1,9 @@
 import 'package:flutter/material.dart';
 import '../models/ConvertNumericValue.dart';
 
-class ConvertNumericValueApp extends StatelessWidget {
-  const ConvertNumericValueApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    const appTitle = 'Convert numeric value';
-    return MaterialApp(
-      title: appTitle,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(appTitle),
-        ),
-        body: const NumericValueForm(),
-      ),
-    );
-  }
-}
-
 class NumericValueForm extends StatefulWidget {
+  static const tag = "numeric_value";
   const NumericValueForm({Key? key}) : super(key: key);
-
   @override
   _NumericValueFormState createState() => _NumericValueFormState();
 }
