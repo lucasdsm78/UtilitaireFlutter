@@ -20,7 +20,6 @@ class _DistanceConverterPageState extends State<DistanceConverterPage> {
   int _result = 0;
   double _finalResult = 0;
   bool unitsSelected = false;
-  String resultDisplay = '';
 
   // Création d'un dropdown menu
   DropdownMenuItem<String> buildMenuItem(String item) =>
